@@ -1,0 +1,14 @@
+{
+  "name": "ive-dev-get-vehicle-request_ids_end_point",
+  "version": "1.0.0",
+  "description": "Lambda api end point",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "preetham",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.18.1"
+  }
+}
