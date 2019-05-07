@@ -18,6 +18,7 @@ exports.handler = async (event, context, callback) => {
         statusCode: 200,
         body: JSON.stringify('Inital Response'),
     };
+
     const body_params = {}
     const page = event['page']
     const itemsPerPage = event['itemsPerPage']
@@ -32,13 +33,12 @@ exports.handler = async (event, context, callback) => {
     try {
         if (page && page != '') {
             if (!Number.isInteger(page)) {
-                callback(new Error(`Page is not Interger type`));
-
+                callback(new Error(`Page is not Integer type`));
             }
         }
         if (itemsPerPage && itemsPerPage != '') {
             if (!Number.isInteger(itemsPerPage)) {
-                callback(new Error(`itemsPerPage is not Interger type`));
+                callback(new Error(`itemsPerPage is not Integer type`));
                 return
             }
         }
