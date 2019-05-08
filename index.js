@@ -88,7 +88,7 @@ exports.handler = async (event, context, callback) => {
         return response;
 
     } catch (error) {
-        console.error(error, 'error cought in catch')
+        console.error(error, 'error caught in catch')
         return error;
 
     }
